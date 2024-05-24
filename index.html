@@ -6,7 +6,6 @@
     <title>NJ Travels & Tours</title>
     <link rel="stylesheet" href="./css/style1.css" />
   </head>
-
   <body>
     <header>
       <nav>
@@ -18,9 +17,9 @@
         </div>
         <div class="nav-links">
           <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Tours</a></li>
+            <li class="active-link"><a  href="#">Home</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="tour.html">Tours</a></li>
             <li><a href="#">Contact Us</a></li>
             <li><a href="#">Why Us</a></li>
             <li><a href="#">Book Now</a></li>
@@ -31,16 +30,27 @@
 
     <main>
       <section class="hero">
-        <div class="hero-content">
-          <h1>Explore the Wonders of Bhutan</h1>
-          <p>
-            Experience the unique culture, stunning landscapes, and spiritual
-            enrichment of Bhutan with our tailored journeys.
-          </p>
-          <a href="#" class="btn">Book Your Adventure</a>
+        <div class="announcement-banner">
+          <span class="announcement-content">
+            <img class="announcement-icon" src="./images/icon/speaker.png" alt="Speaker icon" />
+            <p>Special Discount on All Tours! Book Now and Save 20%!</p>
+          </span>
         </div>
-        <div class="hero-image">
-          <img src="path/to/hero-image.jpg" alt="Bhutan Landscape" />
+        <div class="hero-section">
+          <div class="hero-content">
+            <h1>Explore the Wonders of Bhutan</h1>
+            <p>
+              Experience the unique culture, stunning landscapes, and spiritual
+              enrichment of Bhutan with <b> NJ tours and travels </b>.
+            </p>
+            <a href="#" class="btn">Book Your Adventure</a>
+          </div>
+          <div class="hero-image">
+            <img
+              src="./images/gallery/Collage/hero.png"
+              alt="Bhutan Landscape"
+            />
+          </div>
         </div>
       </section>
 
@@ -52,7 +62,8 @@
             <div class="slide-overlay">
               <h1>Explore and Experience the Bliss of NJ tours</h1>
               <p>
-                Enjoy your time to explore the Last Shangrila and make long-lasting good memories
+                Enjoy your time to explore the Last Shangrila and make
+                long-lasting good memories
               </p>
             </div>
           </div>
@@ -100,16 +111,18 @@
             </li>
             <li>
               <a href="#"
-                ><img 
-                class="instagram"
-                src="./images/icon/instagram.png" alt="Instagram"
+                ><img
+                  class="instagram"
+                  src="./images/icon/instagram.png"
+                  alt="Instagram"
               /></a>
             </li>
             <li>
               <a href="#"
-                ><img 
-                class="whatsapp"
-                src="./images/icon/whatsapp.png" alt="whatsappweb"
+                ><img
+                  class="whatsapp"
+                  src="./images/icon/whatsapp.png"
+                  alt="whatsappweb"
               /></a>
             </li>
           </ul>
