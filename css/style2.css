@@ -1,0 +1,420 @@
+.special-offers {
+  background: linear-gradient(to bottom, #0077b6, #00aaff);
+  padding: 80px 0;
+  color: #fff;
+}
+
+.offers-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 40px;
+}
+
+.offer-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  min-height: 44vh;
+}
+
+.offer-card:hover {
+  transform: translateY(-5px);
+}
+
+.offer-image img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.offer-content {
+  height: 100%;
+  padding: 20px;
+  text-align: center;
+}
+
+.offer-content h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.offer-content p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.new-year .offer-content {
+  background-color: #ffd700;
+  color: #333;
+}
+
+.diwali .offer-content {
+  background-color: #ff6b6b;
+  color: #fff;
+}
+
+.bhutan-festive .offer-content {
+  background-color: #9370db;
+  color: #fff;
+}
+
+.contact-info {
+  background-color: #f8f8f8;
+  padding: 40px 0;
+}
+
+.contact-details {
+  display: flex;
+  justify-content: space-between;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.address-info,
+.inquiry-link {
+  flex: 1;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.inquiry-link {
+  text-align: center;
+}
+
+.inquiry-form {
+  margin: 0 auto;
+  padding: 20px 0;
+  background-color: #f8f8f8;
+}
+
+.inquiry-form form {
+  display: flex;
+  max-width: 450px;
+  flex-direction: column;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.inquiry-form h1 {
+  margin-bottom: 30px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.form-group textarea {
+  height: 150px;
+}
+
+.section-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.section-header img {
+  width: 50px;
+  height: 50px;
+}
+
+/* Why Us Section */
+.why-us {
+  padding: 50px 0;
+  background-color: #f8f8f8;
+}
+
+.section-title {
+  font-size: 36px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.differentiators {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.differentiator {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.differentiator:hover {
+  transform: translateY(-5px);
+}
+
+.differentiator img {
+  width: 100%;
+  height: 50%;
+  margin-bottom: 20px;
+}
+
+.differentiator h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.differentiator p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #666;
+}
+
+/* Testimonials Section */
+.testimonials {
+  padding: 80px 0;
+  background-color: #ffffff;
+}
+
+.testimonial-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.testimonial-card {
+  background-color: #f8f8f8;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-5px);
+}
+
+.testimonial-card img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  object-fit: fill;
+}
+
+.testimonial-card blockquote {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.testimonial-card cite {
+  display: block;
+  font-style: normal;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+/* Tour Plan Section */
+.tour-plan {
+  padding: 80px 0;
+  background-color: #f8f8f8;
+}
+
+.tour-plan-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.tour-plan-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.tour-plan-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.tour-plan-details h3 {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.tour-plan-details p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.tour-plan-details .btn {
+  display: inline-block;
+  background-color: #ffc107;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  border-radius: 4px;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.tour-plan-details .btn:hover {
+  background-color: #005f8a;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .tour-plan-content {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .tour-plan-details h3 {
+    font-size: 20px;
+  }
+
+  .tour-plan-details p {
+    font-size: 14px;
+  }
+
+  .tour-plan-details .btn {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+}
+
+.inquiry-btn {
+  display: inline-block;
+  margin: 0 auto;
+  background-color: #ffc107;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  border-radius: 4px;
+  text-align: center;
+  text-decoration: none;
+  width: 70%;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+@media (max-width: 480px) {
+  .inquiry-btn {
+    width: 100%;
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+}
+
+.error-message {
+  color: red;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.booking-form,
+.inquiry-form {
+  padding: 2rem;
+  background: linear-gradient(to bottom, #0077b6, #00aaff);
+}
+
+.booking-form form,
+.inquiry-form form {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.error-message {
+  color: #dc3545;
+  font-size: 0.875rem;
+  margin-top: 0.25rem;
+}
+
+.success-alert {
+  position: fixed;
+  top: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #28a745;
+  color: #fff;
+  padding: 1rem;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 9999;
+}
+
+@media (max-width: 767px) {
+  .contact-details{
+    flex-direction: column;
+  }
+  .offer-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    min-height: 30vh;
+  }
+}

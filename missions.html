@@ -9,30 +9,42 @@
   <body>
     <header>
       <nav>
-        <div class="logo">
-          <a href="index.html">
-            <img src="./images/logo.png" alt="NJ Travels & Tours Logo" />
-          </a>
-          <h1>NJ Tours and Travel</h1>
+        <div class="header-row-first">
+          <div class="logo">
+            <a href="index.html">
+              <img src="./images/logo.png" alt="NJ Travels & Tours Logo" />
+            </a>
+            <h1>NJ Tours and Travel</h1>
+          </div>
+          <div>
+            <input class="search-input" placeholder="Search"/>
+          </div>
         </div>
-        <div class="nav-links">
+        <div class="header-row-second">
+          <li><a href="index.html" class="btn-secondary">Home</a></li>
+          <li><a href="booking-form.html" class="btn">Book Now</a></li>
+        </div>
+        <div class="nav-links header-row-third">
           <ul>
-            <li><a href="index.html">Home</a></li>
-            <li class="active-link"><a href="#">About Us</a></li>
-            <li><a href="#">Tours</a></li>
-            <li><a href="#">Contact Us</a></li>
-            <li><a href="#">Why Us</a></li>
-            <li><a href="#">Book Now</a></li>
+            <li class="active-link"><a href="aboutus.html">About Us</a></li>
+            <li><a href="tour.html">Tours</a></li>
+            <li><a href="contactus.html">Contact Us</a></li>
+            <li><a href="whyus.html">Why Us</a></li>
           </ul>
         </div>
       </nav>
     </header>
     <main>
-      <section class="mission-values">
+      <section class="goal">
         <div class="container">
-          <h2 class="section-title">Our Mission & Values</h2>
-          <div class="values-grid">
-            <div class="value-item">
+          <h2 class="section-title">Our Goal</h2>
+          <p>Our goal at NJ Travels & Tours is to showcase the rich cultural heritage, breathtaking landscapes, and warm hospitality of Bhutan to travelers from around the world.</p>
+        </div>
+      </section>
+      <section class="mission">
+        <div class="container">
+          <h2 class="section-title">Our Mission</h2>
+          <div class="values-grid"> <div class="value-item">
               <div class="value-icon">
                 <img
                   src="./images/mission/experience.jpg"
@@ -77,6 +89,38 @@
           </div>
         </div>
       </section>
+      <section class="values">
+        <div class="container">
+          <h2 class="section-title">Our Values</h2>
+          <div class="values-grid">
+            <div class="value-item">
+              <h3>Cultural Preservation</h3>
+              <p>
+                We believe in promoting and preserving the rich cultural
+                traditions and values of Bhutan, ensuring that the local
+                communities benefit from tourism while maintaining their unique
+                identity.
+              </p>
+            </div>
+            <div class="value-item">
+              <h3>Local Empowerment</h3>
+              <p>
+                We strive to empower local communities by providing
+                opportunities for employment, skill development, and economic
+                growth, fostering a sustainable tourism industry that benefits
+                all stakeholders.
+              </p>
+            </div>
+            <div class="value-item">
+              <h3>Customer Satisfaction</h3>
+              <p>
+                We also seek to satisfy their need to visit Bhutan and make them well spend their vacation in Bhutan. We aim in creating best 
+                memories in Bhutan for our valued tourists and help them catch the true essence of happiness in Bhutan.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
       <div class="meet-team-nav">
         <a href="meetteam.html" class="btn">Meet Our Team</a>
       </div>
@@ -114,10 +158,10 @@
               /></a>
             </li>
           </ul>
-        </div>
-      </div>
       <div class="footer-bottom">
         <p>&copy; 2024 NJ Travels & Tours. All rights reserved.</p>
+      </div>
+        </div>
       </div>
     </footer>
     <script src="./js/script.js"></script>

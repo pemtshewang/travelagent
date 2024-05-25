@@ -9,25 +9,31 @@
   <body>
     <header>
       <nav>
-        <div class="logo">
-          <a href="index.html">
-            <img src="./images/logo.png" alt="NJ Travels & Tours Logo" />
-          </a>
-          <h1>NJ Tours and Travel</h1>
+        <div class="header-row-first">
+          <div class="logo">
+            <a href="index.html">
+              <img src="./images/logo.png" alt="NJ Travels & Tours Logo" />
+            </a>
+            <h1>NJ Tours and Travel</h1>
+          </div>
+          <div>
+            <input class="search-input" placeholder="Search" />
+          </div>
         </div>
-        <div class="nav-links">
+        <div class="header-row-second">
+          <li><a href="index.html" class="btn-secondary">Home</a></li>
+          <li><a href="booking-form.html" class="btn">Book Now</a></li>
+        </div>
+        <div class="nav-links header-row-third">
           <ul>
-            <li class="active-link"><a href="index.html">Home</a></li>
             <li><a href="aboutus.html">About Us</a></li>
-            <li><a href="tour.html">Tours</a></li>
-            <li><a href="#">Contact Us</a></li>
-            <li><a href="#">Why Us</a></li>
-            <li><a href="#">Book Now</a></li>
+            <li class="active-link"><a href="tour.html">Tours</a></li>
+            <li><a href="contactus.html">Contact Us</a></li>
+            <li><a href="whyus.html">Why Us</a></li>
           </ul>
         </div>
       </nav>
     </header>
-
     <main>
       <section class="tour-hero">
         <div class="tour-culture-container">
@@ -39,7 +45,7 @@
               experiencing local traditions. The tour package is best for long
               holidays
             </p>
-            <a href="#" class="btn">Book Now</a>
+            <a href="booking-form.html" class="btn">Book Cultural Now</a>
           </div>
           <div class="tour-hero-image">
             <img
@@ -90,6 +96,7 @@
       <section class="tour-itinerary">
         <div class="container">
           <h2 class="section-title">Tour Itinerary</h2>
+          <h3 class="section-title">4 days and 5 nights</h3>
           <div class="itinerary-content">
             <div class="itinerary-inner">
               <span class="itinerary-header">Day 1: Arrive in Paro</span>
@@ -109,7 +116,64 @@
               </span>
             </div>
             <div class="itinerary-inner">
-              <span class="itinerary-header">Day 3: Paro to Thimphu</span> 
+              <span class="itinerary-header">Day 3: Paro to Thimphu</span>
+              <span class="itinerary-body">
+                Depart for Thimphu, the capital city of Bhutan. Along the way,
+                stop at the Buddha Point to witness the massive Buddha Dordenma
+                statue. In Thimphu, explore the vibrant weekend market, the
+                National Memorial Chorten, and the Textile Museum.
+              </span>
+            </div>
+            <div class="itinerary-inner">
+              <span class="itinerary-header">Day 4: Thimphu Sightseeing</span>
+              <span class="itinerary-body">
+                Spend a day immersed in the cultural treasures of Thimphu. Visit
+                the impressive Tashichho Dzong, the National Institute of
+                Traditional Arts and Crafts, and the Folk Heritage Museum to
+                learn about Bhutanese traditions.
+              </span>
+            </div>
+            <div class="itinerary-inner">
+              <span class="itinerary-header">Day 5: Thimphu to Paro</span>
+              <span class="itinerary-body">
+                Drive to Paro for departure preparation 
+              </span>
+            </div>
+            <div class="itinerary-inner">
+              <span class="itinerary-header">Day 6: Depart Paro</span>
+              <span class="itinerary-body">
+                After breakfast, bid farewell to the enchanting Land of the
+                Thunder Dragon as you transfer to the airport for your onward
+                journey.
+              </span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="tour-itinerary">
+        <div class="container">
+          <h2 class="section-title">Tour Itinerary</h2>
+          <h3 class="section-title">5 nights and 6 days</h3>
+          <div class="itinerary-content">
+            <div class="itinerary-inner">
+              <span class="itinerary-header">Day 1: Arrive in Paro</span>
+              <span class="itinerary-body">
+                Upon arrival in Paro, you'll be greeted by our representative
+                and transferred to your hotel. After settling in, you can
+                explore the charming town of Paro at your leisure.
+              </span>
+            </div>
+            <div class="itinerary-inner">
+              <span class="itinerary-header">Day 2: Paro Sightseeing</span>
+              <span class="itinerary-body">
+                Start your cultural adventure with a visit to the impressive
+                Rinpung Dzong, a massive fortress-monastery that dominates the
+                Paro valley. Then, hike up to the iconic Tiger's Nest Monastery,
+                one of the most revered sites in Bhutan.
+              </span>
+            </div>
+            <div class="itinerary-inner">
+              <span class="itinerary-header">Day 3: Paro to Thimphu</span>
               <span class="itinerary-body">
                 Depart for Thimphu, the capital city of Bhutan. Along the way,
                 stop at the Buddha Point to witness the massive Buddha Dordenma
@@ -137,18 +201,8 @@
             </div>
             <div class="itinerary-inner">
               <span class="itinerary-header">Day 6: Punakha to Paro</span>
-              <span class="itinerary-body" >
-                Return to Paro, taking in the stunning landscapes along the way.
-                Spend the evening at leisure or indulge in some last-minute
-                shopping in Paro.
-              </span>
-            </div>
-            <div class="itinerary-inner">
-              <span class="itinerary-header">Day 7: Depart Paro</span>
               <span class="itinerary-body">
-                After breakfast, bid farewell to the enchanting Land of the
-                Thunder Dragon as you transfer to the airport for your onward
-                journey.
+                Return to Paro, taking in the stunning landscapes and Depart from Bhutan serenly              
               </span>
             </div>
           </div>
@@ -189,10 +243,10 @@
               /></a>
             </li>
           </ul>
+          <div class="footer-bottom">
+            <p>&copy; 2024 NJ Travels & Tours. All rights reserved.</p>
+          </div>
         </div>
-      </div>
-      <div class="footer-bottom">
-        <p>&copy; 2024 NJ Travels & Tours. All rights reserved.</p>
       </div>
     </footer>
     <script src="./js/script.js"></script>

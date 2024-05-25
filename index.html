@@ -9,41 +9,51 @@
   <body>
     <header>
       <nav>
-        <div class="logo">
-          <a href="index.html">
-            <img src="./images/logo.png" alt="NJ Travels & Tours Logo" />
-          </a>
-          <h1>NJ Tours and Travel</h1>
+        <div class="header-row-first">
+          <div class="logo">
+            <a href="index.html">
+              <img src="./images/logo.png" alt="NJ Travels & Tours Logo" />
+            </a>
+            <h1>NJ Tours and Travel</h1>
+          </div>
+          <div>
+            <input class="search-input" placeholder="Search" />
+          </div>
         </div>
-        <div class="nav-links">
+        <div class="header-row-second">
+          <li><a href="#" class="btn-secondary">Home</a></li>
+          <li><a href="booking-form.html" class="btn">Book Now</a></li>
+        </div>
+        <div class="nav-links header-row-third">
           <ul>
-            <li class="active-link"><a  href="#">Home</a></li>
             <li><a href="aboutus.html">About Us</a></li>
             <li><a href="tour.html">Tours</a></li>
-            <li><a href="#">Contact Us</a></li>
-            <li><a href="#">Why Us</a></li>
-            <li><a href="#">Book Now</a></li>
+            <li><a href="contactus.html">Contact Us</a></li>
+            <li><a href="whyus.html">Why Us</a></li>
           </ul>
         </div>
       </nav>
     </header>
-
     <main>
       <section class="hero">
         <div class="announcement-banner">
           <span class="announcement-content">
-            <img class="announcement-icon" src="./images/icon/speaker.png" alt="Speaker icon" />
+            <img
+              class="announcement-icon"
+              src="./images/icon/speaker.png"
+              alt="Speaker icon"
+            />
             <p>Special Discount on All Tours! Book Now and Save 20%!</p>
           </span>
         </div>
         <div class="hero-section">
           <div class="hero-content">
-            <h1>Explore the Wonders of Bhutan</h1>
+            <h1>Explore and Grow with the Wonders of Bhutan</h1>
             <p>
               Experience the unique culture, stunning landscapes, and spiritual
               enrichment of Bhutan with <b> NJ tours and travels </b>.
             </p>
-            <a href="#" class="btn">Book Your Adventure</a>
+            <a href="tour.html" class="btn">Book Your Adventure</a>
           </div>
           <div class="hero-image">
             <img
@@ -126,10 +136,10 @@
               /></a>
             </li>
           </ul>
+          <div class="footer-bottom">
+            <p>&copy; 2024 NJ Travels & Tours. All rights reserved.</p>
+          </div>
         </div>
-      </div>
-      <div class="footer-bottom">
-        <p>&copy; 2024 NJ Travels & Tours. All rights reserved.</p>
       </div>
     </footer>
     <script src="./js/script.js"></script>

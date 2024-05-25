@@ -1,22 +1,45 @@
+/* loading the font helvetica */
 @font-face {
   font-family: "helvetica";
   src: url("../fonts/helvetica.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "helvetica";
-  src: url("../fonts/helvetica-bold.ttf") format("truetype");
   font-weight: bold;
   font-style: normal;
 }
-
+/* loading the font georgia */
+@font-face {
+  font-family: "Georgia";
+  src: url("../fonts/Georgia.ttf") format("truetype");
+  font-style: normal;
+}
 /* general styles */
 body {
   font-family: "helvetica", sans-serif;
   margin: 0;
   padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Georgia", sans-serif;
+}
+
+.goal{
+  padding:30px;
+}
+.goal p{
+  text-align: center;
+  font-size: medium;
+  line-height: 1.5;
+}
+h1 {
+  font-size: 24px;
+}
+
+h2 {
+  font-size: 20px;
 }
 
 /* header styles */
@@ -25,12 +48,80 @@ header {
   padding: 20px;
 }
 
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+header a {
+  font-weight: 900;
 }
 
+nav {
+  display: flex;
+  flex-direction: column;
+}
+
+.search-bar {
+  position: relative;
+}
+/* General styles for the search bar */
+.search-input {
+  width: 100%;
+  padding: 10px 15px;
+  margin: 10px 0;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+/* Placeholder text style */
+.search-input::placeholder {
+  color: #999;
+  font-style: italic;
+}
+
+/* Style when the search bar is focused */
+.search-input:focus {
+  border-color: #66afe9;
+  outline: none;
+  box-shadow: 0 0 8px rgba(102, 175, 233, 0.6);
+}
+
+/* Optional: Adding a clear button on the right side */
+.search-input::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+  height: 16px;
+  width: 16px;
+  background: url("data:image/svg+xml;base64,PHN2ZyBmaWxsPSJub25lIiBoZWlnaHQ9IjE2IiB2aWV3Qm94PSIwIDAgMTYgMTYiIHdpZHRoPSIxNiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0ibTUuMjkzIDUuMjkzYy0uMzg1LS4zODUtMS4wMTUtLjM4NS0xLjQgMGwtLjE0MS4xNDFjLS4zODUuMzg1LS4zODUuMTAxIDAgMS40bDQuMTA3IDQuMTA3bC00LjEwNyA0LjEwN2MtLjM4NS4zODUtLjM4NSAxLjAxNSAwIDEuNGwuMTQxLjE0MWMuMzg1LjM4NSAxLjAxNS4zODUgMS40IDBsNC4xMDctNC4xMDcgNC4xMDcgNC4xMDdjLjM4NS4zODUgMS4wMTUuMzg1IDEuNCAwIC4zODUtLjM4NS4zODUtMS4wMTUgMCAxLjRsLTQuMTA3LTQuMTA3IDQuMTA3LTQuMTA3Yy4zODUtLjM4NS4zODUtMS4wMTUgMCAxLjRsLS4xNDEuMTQxYy0uMzg1LjM4NS0xLjAxNS4zODUtMS40IDBsLTQuMTA3IDQuMTA3eiIgZmlsbD0iIzAwMCIvPgo8L3N2Zz4K")
+    center/contain no-repeat;
+  cursor: pointer;
+}
+.header-row-first {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-row-second {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  padding: 10px;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+.header-row-second li {
+  list-style-type: none;
+}
+
+.header-row-second li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.header-row-second li a:hover {
+  color: #0077b6;
+}
 .logo {
   display: flex;
   align-items: center;
@@ -44,14 +135,13 @@ nav {
   scale: 1.5;
 }
 
-.nav-links ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+.nav-links ul  {
   display: flex;
+  justify-content: center;
 }
 
 .nav-links li {
+  list-style: none;
   margin-left: 20px;
 }
 
@@ -119,16 +209,32 @@ nav {
   max-width: 600px;
 }
 
+/* Hamburger Menu Icon */
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.hamburger span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin-bottom: 5px;
+  background-color: #333;
+}
+
+/* Media Query for small screens */
 .hero-content h1 {
   letter-spacing: 1px;
   font-size: 36px;
   margin-bottom: 20px;
+  line-height: 1.5;
 }
 
 .hero-content p {
   font-size: 18px;
   letter-spacing: 0.5px;
-  line-height: 32px;
+  line-height: 1.5;
   margin-bottom: 30px;
 }
 
@@ -142,12 +248,21 @@ nav {
   transition: background-color 0.3s ease;
 }
 
+.btn-secondary {
+  display: inline-block;
+  color: #333;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
 .btn:hover {
   background-color: #e0a800;
 }
 
 .hero-image img {
-  max-width: 400px;
+  max-width: 300px;
   max-height: 100vh;
   border-radius: 4px;
 }
@@ -285,14 +400,12 @@ footer {
     padding: 10px;
   }
 
+  .header-row-second {
+    margin: 0 auto;
+  }
   nav {
     flex-direction: column;
     align-items: flex-start;
-  }
-
-  .nav-links ul {
-    flex-direction: column;
-    margin-top: 10px;
   }
 
   .nav-links li {
@@ -646,7 +759,7 @@ footer {
 
 /* Tour Highlights Section */
 .tour-highlights {
-  padding: 80px 0;
+  padding: 30px 0;
 }
 
 .highlight-grid {
@@ -689,7 +802,7 @@ footer {
 
 /* Tour Itinerary Section */
 .tour-itinerary {
-  padding: 80px 0;
+  padding: 40px 0;
   background-color: #f8f8f8;
 }
 
@@ -712,7 +825,7 @@ footer {
   padding: 10px;
   display: flex;
 }
-.itinerary-content{
+.itinerary-content {
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -726,11 +839,222 @@ footer {
 .itinerary-header {
   font-size: 18px;
   background-color: #ffc107;
-  padding:10px;
+  padding: 10px;
   font-weight: bold;
 }
 .itinerary-body {
   color: white;
   background-color: #00aaff;
-  padding:10px;
+  padding: 10px;
+}
+.nature-hero {
+  padding: 0 40px;
+}
+
+/* responsiveness screen */
+/* responsiveness for all the components */
+/* Styles for screens smaller than 768px (e.g., mobile devices) */
+@media (max-width: 767px) {
+  /* Adjust header and navigation */
+  .container{
+    padding:0;
+  }
+
+  header {
+    padding: 10px;
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-links {
+    padding: 20px;
+    margin: 0 auto;
+  }
+
+  .nav-links ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .nav-links li {
+    margin-left: 0;
+    margin-bottom: 5px;
+  }
+
+  .header-row-first {
+    flex-direction: column;
+    gap: 30px;
+  }
+  /* Adjust hero section */
+  .hero {
+    flex-direction: column;
+    padding: 40px 20px;
+  }
+
+  .hero-section {
+    flex-direction: column;
+  }
+
+  .hero-content {
+    max-width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .hero-image {
+    display: flex;
+    justify-content: center;
+  }
+
+  .hero-image img {
+    max-width: 100%;
+  }
+
+  /* Adjust footer */
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-section {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  /* Adjust slider */
+  .slider {
+    height: auto;
+  }
+
+  .slide-overlay {
+    position: static;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    text-align: center;
+  }
+
+  .slide-overlay h1 {
+    font-size: 24px;
+  }
+
+  .slide-overlay p {
+    font-size: 16px;
+  }
+
+  .prev,
+  .next {
+    display: none; /* Hide navigation buttons on smaller screens */
+  }
+
+  /* Adjust company background section */
+  .content-wrapper {
+    flex-direction: column;
+  }
+
+  .text-content {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .image-content {
+    text-align: center;
+    margin-bottom: 0;
+  }
+
+  /* Adjust mission values section */
+  .values-grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+
+  /* Adjust meet team section */
+  .team-grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+
+  /* Adjust tours section */
+  .tour-grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+
+  /* Adjust tour hero section */
+  .tour-hero-content {
+    text-align: center;
+  }
+
+  /* Adjust tour highlights section */
+  .highlight-grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+
+  /* Adjust tour itinerary section */
+  .tour-culture-container {
+    flex-direction: column;
+    padding-left: 0;
+  }
+}
+
+/* Styles for screens between 768px and 991px (e.g., tablets) */
+@media (min-width: 768px) and (max-width: 991px) {
+  /* Adjust hero section */
+  .hero {
+    flex-direction: column; /* Change flex direction to column */
+    padding: 40px 20px;
+  }
+
+  .hero-content {
+    max-width: 100%;
+    text-align: center;
+    margin-bottom: 20px; /* Add margin-bottom to create space between content and image */
+  }
+
+  .hero-image {
+    display: flex;
+    justify-content: center; /* Center the image horizontally */
+  }
+
+  .hero-image img {
+    max-width: 100%; /* Ensure the image doesn't exceed its container's width */
+  }
+
+  /* Adjust slider */
+  .slide-overlay {
+    left: 5%;
+    top: 20%;
+  }
+
+  .slide-overlay h1 {
+    font-size: 28px;
+  }
+
+  .slide-overlay p {
+    font-size: 18px;
+  }
+}
+
+/* Styles for screens larger than 992px (e.g., desktops) */
+@media (min-width: 992px) {
+  /* Adjust slider */
+  .slide-overlay {
+    left: 10%;
+    top: 30%;
+  }
+
+  .slide-overlay h1 {
+    font-size: 36px;
+  }
+
+  .slide-overlay p {
+    font-size: 20px;
+  }
 }

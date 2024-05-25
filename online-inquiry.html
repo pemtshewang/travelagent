@@ -3,12 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>NJ Travels & Tours</title>
+    <title>Online Inquiry Form</title>
     <link rel="stylesheet" href="./css/style1.css" />
+    <link rel="stylesheet" href="./css/style2.css" />
   </head>
   <body>
     <header>
-      <nav>
+      <!-- header section  -->
+      <nav aria-label="Main Navigation">
         <div class="header-row-first">
           <div class="logo">
             <a href="index.html">
@@ -17,7 +19,7 @@
             <h1>NJ Tours and Travel</h1>
           </div>
           <div>
-            <input class="search-input" placeholder="Search"/>
+            <input class="search-input" placeholder="Search" />
           </div>
         </div>
         <div class="header-row-second">
@@ -26,50 +28,48 @@
         </div>
         <div class="nav-links header-row-third">
           <ul>
-            <li class="active-link"><a href="aboutus.html">About Us</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
             <li><a href="tour.html">Tours</a></li>
-            <li><a href="contactus.html">Contact Us</a></li>
+            <li class="active-link"><a href="contactus.html">Contact Us</a></li>
             <li><a href="whyus.html">Why Us</a></li>
           </ul>
         </div>
       </nav>
     </header>
     <main>
-      <section class="company-background">
+      <section class="inquiry-form">
         <div class="container">
-          <div class="content-wrapper">
-            <div class="text-content">
-              <h2 class="section-title">About Us</h2>
-              <p>
-                <b> Norbu Jamtsho Travels & Tours </b> was founded in 2010 with
-                a vision to share the enchanting beauty and rich cultural
-                heritage of Bhutan with the world. From its humble beginnings as
-                a small family-run business, we have grown into a leading travel
-                agency, specializing in creating unforgettable and sustainable
-                travel experiences.
-              </p>
-              <p>
-                Our journey began with a deep appreciation for the pristine
-                natural landscapes, ancient monasteries, and warm hospitality
-                that make Bhutan truly unique. We believed that by offering
-                personalized and responsible tours, we could not only provide
-                travelers with life-changing adventures but also contribute to
-                the preservation of Bhutan's environment and cultural
-                traditions.
-              </p>
-              <a href="missions.html" class="btn">Mission and Values</a>
+          <form class="inquiry_form" aria-label="Inquiry Form">
+            <div class="section-header">
+              <h1 class="section-title">Submit an Inquiry</h1>
+              <img src="./images/icon/mail.png" />
             </div>
-            <div class="image-content">
-              <img
-                src="./images/logo.png"
-                alt="Company Background"
-                class="company-background-image"
-              />
+            <div class="form-group">
+              <label aria-label="label for name input" for="name">Name:</label>
+              <input type="text" id="name" name="name" />
             </div>
-          </div>
+            <div class="form-group">
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" />
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone:</label>
+              <input type="tel" id="phone" name="phone" />
+            </div>
+            <div class="form-group">
+              <label for="message">Message:</label>
+              <textarea
+                placeholder="Kindly leave us your inquiry here"
+                id="message"
+                name="message"
+              ></textarea>
+            </div>
+            <button type="submit" class="inquiry-btn">Submit My Inquiry</button>
+          </form>
         </div>
       </section>
     </main>
+    <!-- footer section  -->
     <footer>
       <div class="footer-content">
         <div class="footer-section">
@@ -82,12 +82,12 @@
           <h3>Follow Us</h3>
           <ul class="social-icons">
             <li>
-              <a href="#"
+              <a href="#" aria-label="Facebook"
                 ><img src="./images/icon/facebook.png" alt="Facebook"
               /></a>
             </li>
             <li>
-              <a href="#"
+              <a href="#" aria-label="Instagram"
                 ><img
                   class="instagram"
                   src="./images/icon/instagram.png"
@@ -95,11 +95,11 @@
               /></a>
             </li>
             <li>
-              <a href="#"
+              <a href="#" aria-label="WhatsApp"
                 ><img
                   class="whatsapp"
                   src="./images/icon/whatsapp.png"
-                  alt="whatsappweb"
+                  alt="WhatsApp"
               /></a>
             </li>
           </ul>
@@ -109,6 +109,6 @@
         </div>
       </div>
     </footer>
-    <script src="./js/script.js"></script>
   </body>
+  <script src="./js/script.js"></script>
 </html>
